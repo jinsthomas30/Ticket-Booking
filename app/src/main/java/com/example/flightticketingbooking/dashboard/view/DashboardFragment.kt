@@ -30,7 +30,7 @@ import java.time.format.DateTimeFormatter
 @AndroidEntryPoint
 class DashboardFragment : Fragment() {
     private var _binding: FragmentDashboardBinding? = null
-    private val binding get() = _binding!!
+    val binding get() = _binding!!
     lateinit var viewModel: DashboardViewModel
     private lateinit var sessionManager: SessionManager
 
