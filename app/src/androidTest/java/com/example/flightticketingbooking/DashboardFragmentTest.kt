@@ -20,8 +20,8 @@ class DashboardFragmentTest {
 
     private lateinit var scenario: FragmentScenario<DashboardFragment>
 
-    @get:Rule
-    var hiltRule = HiltAndroidRule(this)
+    /*@get:Rule
+    var hiltRule = HiltAndroidRule(this)*/
 
     // Use ActivityScenarioRule to launch YourActivity for testing
     @get:Rule
@@ -30,7 +30,7 @@ class DashboardFragmentTest {
 
     @Before
     fun setUp() {
-        hiltRule.inject()
+        //hiltRule.inject()
         // Use launchFragmentInContainer to create a FragmentScenario for testing
         scenario = launchFragmentInContainer(themeResId = R.style.Theme_FlightTicketingBooking)
     }

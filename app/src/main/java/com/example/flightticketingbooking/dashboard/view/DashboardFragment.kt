@@ -136,6 +136,12 @@ class DashboardFragment : Fragment() {
             binding.tAdultValue.text = it
         })
 
+        binding.bSearch.setOnClickListener {
+            val action =
+                DashboardFragmentDirections.actionDashboardFragmentToFlightSearchResultFragment()
+            findNavController().navigate(action)
+        }
+
     }
 
     private fun showDatePickerDialogFromDate() {

@@ -17,6 +17,9 @@
         <action
             android:id="@+id/action_dashboardFragment_to_airportCityFragment"
             app:destination="@id/airportCityFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_flightSearchResultFragment"
+            app:destination="@id/flightSearchResultFragment" />
 
 
     </fragment>
@@ -33,4 +36,9 @@
             android:id="@+id/action_airportCityFragment_to_dashboardFragment"
             app:destination="@id/dashboardFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/flightSearchResultFragment"
+        android:name="com.example.flightticketingbooking.flightsearch.FlightSearchResultFragment"
+        android:label="FlightSearchResultFragment"
+        tools:layout="@layout/fragment_flight_search_result"/>
 </navigation>
